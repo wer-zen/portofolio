@@ -1,0 +1,142 @@
+---
+// FontFaces.astro - Font declarations for all available fonts
+---
+
+<style is:global>
+    /* Akony Font */
+    @font-face {
+        font-family: "Akony";
+        src: url("../../public/fonts/other/akony.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Reiswar Font */
+    @font-face {
+        font-family: "Reiswar";
+        src: url("../../public/fonts/other/Reiswar.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* UNCAGE Font Family */
+    @font-face {
+        font-family: "UNCAGE";
+        src: url("../../public/fonts/other/uncage/UNCAGE-Regular.ttf")
+            format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "UNCAGE";
+        src: url("../../public/fonts/other/uncage/UNCAGE-Medium.ttf")
+            format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "UNCAGE";
+        src: url("../../public/fonts/other/uncage/UNCAGE-SemiBold.ttf")
+            format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "UNCAGE";
+        src: url("../../public/fonts/other/uncage/UNCAGE-Bold.ttf")
+            format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* UNCAGE Variable Font */
+    @font-face {
+        font-family: "UNCAGE Variable";
+        src: url("../../public/fonts/other/uncage/UNCAGE-VF.ttf")
+            format("truetype-variations");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Wosker Font */
+    @font-face {
+        font-family: "Wosker";
+        src: url("../../public/fonts/other/wosker.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Uni 05 Font Family */
+    @font-face {
+        font-family: "Uni 05";
+        src: url("../../public/fonts/uni_05_x/uni05_53.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Uni 05";
+        src: url("../../public/fonts/uni_05_x/uni05_54.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Uni 05";
+        src: url("../../public/fonts/uni_05_x/uni05_63.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Uni 05";
+        src: url("../../public/fonts/uni_05_x/uni05_64.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* CSS Custom Properties for easy access */
+    :root {
+        --font-akony: "Akony", sans-serif;
+        --font-reiswar: "Reiswar", serif;
+        --font-uncage: "UNCAGE", sans-serif;
+        --font-uncage-variable: "UNCAGE Variable", sans-serif;
+        --font-wosker: "Wosker", sans-serif;
+        --font-uni05: "Uni 05", sans-serif;
+    }
+
+    /* Utility classes for quick font application */
+    .font-akony {
+        font-family: var(--font-akony);
+    }
+    .font-reiswar {
+        font-family: var(--font-reiswar);
+    }
+    .font-uncage {
+        font-family: var(--font-uncage);
+    }
+    .font-uncage-variable {
+        font-family: var(--font-uncage-variable);
+    }
+    .font-wosker {
+        font-family: var(--font-wosker);
+    }
+    .font-uni05 {
+        font-family: var(--font-uni05);
+    }
+</style>

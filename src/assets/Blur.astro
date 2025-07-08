@@ -1,0 +1,20 @@
+---
+// Blurfx.astro
+const { top = "0%", left = "0%" } = Astro.props;
+---
+
+<div class="blurred-effect" style={`top: ${top}; left: ${left};`}></div>
+
+<style>
+    .blurred-effect {
+        background-color: #ff4f0050;
+        filter: blur(250px);
+        border-radius: 1000px;
+        padding: 20px;
+        margin: 10px;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        z-index: -2;
+    }
+</style>

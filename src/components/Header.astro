@@ -1,0 +1,103 @@
+---
+import logo from "../../public/svgs/logodark.svg";
+---
+
+<header id="header">
+    <img id="logo" src={logo.src} width="48" height="48" alt="Zennie" />
+
+    <ul>
+        <li>
+            <a href="" class="active">Home</a>
+        </li>
+        <li>
+            <a href="" class="active">About Me</a>
+        </li>
+        <li id="anyidea">
+            <label class="active" id="anyidealabel">Any Idea?</label>
+            <a href="" class="active" id="xme">Email Me</a>
+        </li>
+    </ul>
+</header>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Unbounded:wght@200..900&display=swap");
+
+    @font-face {
+        font-family: "Uni05_53";
+        src: url("../assets/fonts/uni_05_x/uni05_53.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+    header {
+        position: fixed; /* Makes it stick to the top */
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        gap: 10px;
+        font-weight: 400;
+        font-family: "Unbounded";
+        text-transform: uppercase;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffffbb;
+        height: 40;
+        width: 400;
+        margin: 10px;
+        padding: 0px 20px 0px 20px;
+        border-radius: 10px;
+        border: solid 0px #ff4f0020;
+        backdrop-filter: blur(10px); /* Apply blur effect to the background */
+    }
+    ul {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        color: black;
+        font-size: 14px;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+        color: black; /* Default state */
+    }
+
+    a:link {
+        color: black;
+    }
+
+    /* visited link */
+    a:visited {
+        color: black /*#ff4f00*/;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #ff4f0080;
+    }
+
+    #anyidealabel {
+        font-size: 10px;
+    }
+
+    #xme {
+        border-radius: 4px;
+        background-color: #ff4f0050;
+        padding: 4px;
+        font-family: "Uni05_53";
+    }
+
+    #xme:hover {
+        background-color: #00b0ff80;
+        color: black;
+    }
+
+    #logo {
+        height: 32px;
+        width: 32px;
+    }
+</style>

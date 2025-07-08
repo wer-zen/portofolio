@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Blurfx from "../assets/Blur.astro";
+import Background from "../assets/Background.astro";
+import { IconBrandGithub } from "@tabler/icons-react";
+---
+
+<Layout>
+    <Background />
+    <Blurfx />
+    <Blurfx top="50%" left="70%" />
+    <div id="container">
+        <label id="ohno">Error 404</label>
+        <label id="return"
+            >Check internet, check the bill, check everything</label
+        >
+        <ul>
+            <a id="github">
+                <IconBrandGithub stroke={2} />
+            </a>
+            <a id="discord"> <img /></a>
+            <a id="linkedin"> <img /></a>
+        </ul>
+    </div>
+</Layout>
+
+<style>
+    main {
+        padding: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #container {
+        height: 100%;
+    }
+</style>
