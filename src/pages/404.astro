@@ -3,36 +3,90 @@ import Layout from "../layouts/Layout.astro";
 import Blurfx from "../assets/Blur.astro";
 import Background from "../assets/Background.astro";
 import { IconBrandGithub } from "@tabler/icons-react";
+import { IconBrandDiscord } from "@tabler/icons-react";
+import { IconMail } from "@tabler/icons-react";
+import Fonts from "../assets/fonts.astro";
 ---
+
+<Fonts />
 
 <Layout>
     <Background />
     <Blurfx />
     <Blurfx top="50%" left="70%" />
     <div id="container">
-        <label id="ohno">Error 404</label>
-        <label id="return"
-            >Check internet, check the bill, check everything</label
-        >
-        <ul>
-            <a id="github">
-                <IconBrandGithub stroke={2} />
-            </a>
-            <a id="discord"> <img /></a>
-            <a id="linkedin"> <img /></a>
-        </ul>
+        <main>
+            <section id="error-section">
+                <label id="ohno" class="font-akony">Error 404</label>
+                <label id="return" class="font-uncage"
+                    >Check internet, check the bill, check everything</label
+                >
+                <ul>
+                    <a href="https://github.com/wer-zen" id="github">
+                        <IconBrandGithub stroke={2} />
+                    </a>
+                    <!-- <label id="discord">
+                        <IconBrandDiscord stroke={2} />
+                        <label id="discord_id"> _werzen</label>
+                    </label> -->
+                    <a href="mailto:zenwerden@gmail.com" id="email">
+                        <IconMail stroke={2} />
+                    </a>
+                </ul>
+            </section>
+        </main>
     </div>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+        html {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            z-index: -3;
+        }
+
+        #container {
+            height: 100%;
+            z-index: 2;
+        }
+        main {
+            padding: 40px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: transparent;
+        }
+        #error-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0px 0 0 0;
+            justify-content: center;
+            align-items: center;
+        }
+        #ohno {
+            font-size: 5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #return {
+            margin-bottom: 10px;
+        }
+        #discord_id {
+            display: flex;
+            font-family: "Unbounded";
+            color: white;
+        }
+    </style>
 </Layout>
-
-<style>
-    main {
-        padding: 40px;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    #container {
-        height: 100%;
-    }
-</style>
