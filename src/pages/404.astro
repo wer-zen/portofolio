@@ -39,7 +39,14 @@ import Fonts from "../assets/fonts.astro";
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 
-        b #container {
+        html {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            z-index: -3;
+        }
+
+        #container {
             height: 100%;
             z-index: 2;
         }
