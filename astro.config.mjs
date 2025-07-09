@@ -12,7 +12,6 @@ export default defineConfig({
   output: "static",
 
   // If you need custom 404 handling
-  experimental: {
-    redirects: true,
-  },
+
+  redirects: {},
 });
